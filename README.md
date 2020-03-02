@@ -10,7 +10,7 @@ ansible-playbook elasticsearch.yaml -l es
 3. Добавление Репозитория elasticsearch
 4. Установка elasticsearch
 5. Копирование измененного elasticsearch.service, т.к сервис не успевал стартануть и systemd его останавливал.
-    Добавил TimeoutSec=900; вероятно проблема в слабой конфигурации ПК.
+    Добавил TimeoutSec=900;
 6. Копирование конфигурации на каждую ноду из шаблона.
 
 PS: master_node, data_node_1, data_node_2, должны быть прописаны в DNS или добавлены в hosts на каждой машине кластера.
