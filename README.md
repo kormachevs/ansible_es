@@ -6,8 +6,8 @@
 ansible-playbook elasticsearch.yaml -l es
 
 1. Установка зависимостей: java , apt-transport-https
-2. Добавление Ключа
-3. Добавление Репозитория elasticsearch
+2. Добавление ключа GPG
+3. Добавление репозитория elasticsearch
 4. Установка elasticsearch
 5. Копирование измененного elasticsearch.service, т.к сервис не успевал стартануть и systemd его останавливал.
     Добавил TimeoutSec=900;
