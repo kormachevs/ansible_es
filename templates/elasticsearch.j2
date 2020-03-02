@@ -1,0 +1,10 @@
+cluster.name: {{ cluster_name }}
+node.name: {{ inventory_hostname }}
+path.data: /var/lib/elasticsearch
+path.logs: /var/log/elasticsearch
+network.host: {{ ansible_ssh_host }}
+http.port: 9200
+discovery.seed_hosts: {{ ansible_play_hosts_all | to_yaml }}
+node.data: {{ node_data  }}
+node.master: {{ node_master }}
+cluster.initial_master_nodes: ["{{ master_node_ip }}"]
