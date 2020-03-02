@@ -1,0 +1,10 @@
+[es:children]
+master_node
+data_node
+
+[master_node]
+master_node ansible_ssh_host=192.168.99.103
+
+[data_node]
+data_node_1 ansible_ssh_host=192.168.99.104
+data_node_2 ansible_ssh_host=192.168.99.105
